@@ -20,6 +20,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+/db.sqlite3
 lib64/
 parts/
 sdist/

@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from frontend.views import *
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', get_index_view),
 ]
