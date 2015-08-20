@@ -3,5 +3,4 @@ from django.http import HttpResponse
 
 
 def get_index_view(request):
-    data = 'dada'
-    return HttpResponse(data)
+    return render(request, 'index.html')

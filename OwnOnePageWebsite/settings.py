@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/Users/mihaivisuian/Documents/Projects/OwnOnePageWebsite/frontend/static/frontend/templates',
+            'frontend/static/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -102,4 +102,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "frontend/static/"
+
+STATICFILES_DIRS = (
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR, 'frontend/static'),
+)
