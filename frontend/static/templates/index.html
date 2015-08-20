@@ -1,5 +1,5 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
@@ -10,15 +10,8 @@
     <meta name="author" content="">
 
     <title>Grayscale - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../../libs/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../../libs/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/generated/css/project_libs.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/generated/css/project_gui.min.css' %}">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -133,9 +126,6 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
-
     <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -143,21 +133,8 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="../../libs/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../../libs/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="../../libs/js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../js/grayscale.js"></script>
-
+<script src = {% static 'frontend/generated/js/project_libs.min.js' %}></script>
+<script src = {% static 'frontend/generated/js/project_gui.min.js' %}></script>
 </body>
 
 </html>
