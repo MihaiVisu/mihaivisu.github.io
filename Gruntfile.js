@@ -30,6 +30,23 @@ module.exports = function (grunt) {
                     ]
                 }
             }
+        },
+        less: {
+            development: {
+                options: {
+                    plugins: [
+                        new (require('less-plugin-autoprefix'))({
+                            browsers: ["last 2 versions"]
+                        }),
+                        new (require('less-plugin-clean-css'))
+                    ]
+                },
+                files: {
+                    "frontend/static/frontend/generated/css/project_gui.min.css": [
+                        'frontend/static/frontend/less/*.less'
+                    ]
+                }
+            }
         }
     });
 
