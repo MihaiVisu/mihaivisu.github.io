@@ -4,23 +4,17 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
-            build: {
-                src: 'frontend/static/frontend/js/*.js',
-                dest: 'frontend/static/frontend/generated/js/project_gui.min.js'
-            }
-        },
-        concat: {
-            options: {
-                separator: ';'
-            },
-            dist: {
+            min: {
+                options: {
+                    beautify: true
+                },
                 files: {
+                    'frontend/static/frontend/generated/js/project_gui.min.js': [
+                        'frontend/static/frontend/js/grayscale.js'
+                    ],
                     'frontend/static/frontend/generated/js/project_libs.min.js': [
                         'node_modules/jquery/dist/jquery.min.js',
                         'node_modules/bootstrap/dist/js/bootstrap.min.js'
-                    ],
-                    'frontend/static/frontend/generated/css/project_libs.min.css': [
-                        'node_modules/bootstrap/dist/css/bootstrap.min.css'
                     ]
                 }
             }
@@ -48,7 +42,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify']);
