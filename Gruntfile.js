@@ -53,7 +53,7 @@ module.exports = function (grunt) {
             libs: {
                 files: {
                     'frontend/static/frontend/generated/css/project_libs.min.css': [
-                        'node_modules/bootstrap/dist/css/*.min.css',
+                        'node_modules/bootstrap/dist/css/bootstrap.min.css',
                         'frontend/static/frontend/libs/jquery-ui-1.11.4.custom/jquery-ui.min.css'
                     ]
                 }
