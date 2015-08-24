@@ -3,6 +3,20 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        watch: {
+            options: {
+                spawn: false
+            },
+            scripts: {
+                files: ['frontend/static/frontend/js/*.js'],
+                tasks: ['uglify:gui']
+            },
+            styles: {
+                files: ['frontend/static/frontend/less/*.less'],
+                tasks: ['less']
+            }
+
+        },
         uglify: {
             options: {
                 beautify: true
@@ -10,7 +24,7 @@ module.exports = function (grunt) {
             gui: {
                 files: {
                     'frontend/static/frontend/generated/js/project_gui.min.js': [
-                        'frontend/static/frontend/js/grayscale.js'
+                        'frontend/static/frontend/js/*.js'
                     ]
                 }
             },
@@ -43,17 +57,10 @@ module.exports = function (grunt) {
             }
         },
         cssmin: {
-            gui: {
-                files: {
-                    'frontend/static/frontend/generated/css/project_gui.min.css': [
-                        'frontend/static/frontend/generated/css/project_gui.min.css'
-                    ]
-                }
-            },
             libs: {
                 files: {
                     'frontend/static/frontend/generated/css/project_libs.min.css': [
-                        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+                        'node_modules/bootstrap/dist/css/*.min.css',
                         'frontend/static/frontend/libs/jquery-ui-1.11.4.custom/jquery-ui.min.css'
                     ]
                 }
@@ -89,6 +96,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['watch']);
 
 };
