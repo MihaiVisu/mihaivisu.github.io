@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             },
             styles: {
                 files: ['less/*.less'],
-                tasks: ['less']
+                tasks: ['less:gui']
             }
         },
         uglify: {
