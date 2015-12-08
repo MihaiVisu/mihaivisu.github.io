@@ -31,7 +31,8 @@ module.exports = function (grunt) {
                 files: {
                     'generated/js/project_libs.min.js': [
                         'node_modules/jquery/dist/jquery.min.js',
-                        'node_modules/bootstrap/dist/js/bootstrap.min.js'
+                        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+                        'libs/js/*.js'
                     ]
                 }
             }
@@ -57,7 +58,8 @@ module.exports = function (grunt) {
                 files: {
                     'generated/css/project_libs.min.css': [
                         'node_modules/bootstrap/less/bootstrap.less',
-                        'node_modules/font-awesome/less/font-awesome.less'
+                        'node_modules/font-awesome/less/font-awesome.less',
+                        'libs/css/animate.less'
                     ]
                 }
             }
