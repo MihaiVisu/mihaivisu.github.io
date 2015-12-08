@@ -90,7 +90,8 @@ module.exports = function (grunt) {
                 files: {
                     'generated/img/bg-portfolio.jpg': 'img/bg-portfolio.jpg',
                     'generated/img/header-bg.jpg': 'img/header-bg.jpg',
-                    'generated/img/skills.png': 'img/skills.png'
+                    'generated/img/skills.png': 'img/skills.png',
+                    'generated/img/me.jpg': 'img/me.jpg',
                 }
             }
         }

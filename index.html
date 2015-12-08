@@ -1,82 +1,792 @@
-<!doctype html>
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>[INSERT SITE TITLE HERE]</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mihai Visuian - Resume">
-    <meta name="author" content="Mihai Visuian">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive One Page Resume/CV">
+    <meta name="author" content="Linewp">
+    <title>Mihai Visuian - Landing Page</title>
+
     <link rel="stylesheet" href="generated/css/project_libs.min.css">
     <link rel="stylesheet" href="generated/css/project_gui.min.css">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;">
-            <h1>Mihai Visuian</h1>
-        </div>
 
-        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-          <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Mihai Visuian</a>
+<body id="page-top" class="index">
+
+	<!-- Preloader -->
+	<div id="loader">
+	  <div id="loaderInner">
+			<div class="loaderBars">
+				<span class="bar1 bar"></span>
+				<span class="bar2 bar"></span>
+				<span class="bar3 bar"></span>
+			</div>
+	  </div>
+	</div>
+	<!-- preloader End -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Mihai Visuian
+                </a>
             </div>
-            <div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li><a href="#section1">Section 1</a></li>
-                  <li><a href="#section2">Section 2</a></li>
-                  <li><a href="#section3">Section 3</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#section41">Section 4-1</a></li>
-                      <li><a href="#section42">Section 4-2</a></li>
-                    </ul>
-                  </li>
+
+            <!-- navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#skills">Skills</a></li>
+                    <li><a class="page-scroll" href="#services">Services</a></li>
+                    <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+                    <li><a class="page-scroll" href="#resume">Resume</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
-              </div>
             </div>
-          </div>
-        </nav>
+            <!-- navbar-collapse End -->
 
-        <div id="section1" class="container-fluid">
-          <h1>Section 1</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
         </div>
-        <div id="section2" class="container-fluid">
-          <h1>Section 2</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text wow fadeInDown animated">
+                <div class="intro-lead-in">Welcome To My Landing Page!</div>
+                <div class="intro-heading">Hi, I’m Mihai Visuian</div>
+                <a href="#about" class="page-scroll btn btn-x2">More About Me</a>
+            </div>
         </div>
-        <div id="section3" class="container-fluid">
-          <h1>Section 3</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </header>
+    <!-- Header End -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+				<div class="col-lg-12 text-center wow fadeInDown animated">
+                    <h2 class="section-heading">About me</h2>
+                    <h3 class="section-subheading text-muted">
+                        Some personal details.
+                    </h3>
+                </div>
+                <div class="col-lg-4 text-center col-md-4 col-sm-4 col-xs-12 pull-right media wow zoomIn animated">
+                    <img alt="" class="img-circle img-me" src="img/me.jpg">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left media">
+                    <h3>Mihai Visuian</h3>
+                    <h4>Computer Science Undergraduate Student</h4>
+                    <p class="text-muted">Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitudin ipsum tincidunt adipiscing ante varius at. Sed mollis ves
+                    tibulum sapien sed mattis.</p>
+                    <p class="text-muted">Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte
+                    tibulum sapien sed mattis.Cras dictum tellus dui. Sed mollis vestibulum sapien rthsed mattis.Cras dictum tellus duvi, vitae sollicitudin ipsum tincidunt adipiscing tibulum sapien sed mattis.</p>
+                    <p><a class="btn btn-primary btn-lg wow bounce animated" role="button" href="#">Download Printable Resume</a></p>
+                </div>
+			</div>
+
         </div>
-        <div id="section41" class="container-fluid">
-          <h1>Section 4 Submenu 1</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Status Section -->
+    <section id="status" class="counter">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-6 col-xs-6 wow flipInY animated">
+                    <i class="fa fa-clock-o fa-3x"></i>
+                    <h3 class="total-number-1">2150</h3>
+                    <p>Approx. Hours of Work Experience</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 wow flipInY animated">
+                    <i class="fa fa-trophy fa-3x"></i>
+                    <h3 class="total-number-2">32</h3>
+                    <p>Relevant Awards Won</p>
+                </div>
+            </div>
         </div>
-        <div id="section42" class="container-fluid">
-          <h1>Section 4 Submenu 2</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </section>
+    <!-- Status Section End -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInDown animated">
+                    <h2 class="section-heading">Skills</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="90" class="chart skilBg"> <span class="percent">90</span> <canvas height="152" width="152"></canvas></span>
+            <h4>HTML5</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
         </div>
-    </body>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="75" class="chart skilBg"> <span class="percent">75</span> <canvas height="152" width="152"></canvas></span>
+            <h4>jQuery</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="80" class="chart skilBg"> <span class="percent">80</span> <canvas height="152" width="152"></canvas></span>
+            <h4>PHP / MySQL</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="75" class="chart skilBg"> <span class="percent">75</span> <canvas height="152" width="152"></canvas></span>
+            <h4>Photoshop</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="60" class="chart skilBg"> <span class="percent">60</span> <canvas height="152" width="152"></canvas></span>
+            <h4>Illustrator</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span data-percent="65" class="chart skilBg"> <span class="percent">65</span> <canvas height="152" width="152"></canvas></span>
+            <h4>Flash</h4>
+            <p>Lorem ipsum dolor sit amet consectetur elit sed</p>
+          </div>
+        </div>
+      </div>
+
+
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInDown animated">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 wow fadeInDown animated">
+                    <span class="fa-stack fa-4x">
+                        <i class="icon-lightbulb text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">Web Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3 wow fadeInUp animated">
+                    <span class="fa-stack fa-4x">
+                        <i class="icon-camera text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">User Experience</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3 wow fadeInDown animated">
+                    <span class="fa-stack fa-4x">
+                        <i class="icon-tools text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-3 wow fadeInUp animated">
+                    <span class="fa-stack fa-4x">
+                        <i class="icon-linegraph text-primary"></i>
+                    </span>
+                    <h4 class="service-heading">Project Management</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInDown animated">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Photography</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Project Name</h4>
+                        <p class="text-muted">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Here Me Section -->
+    <section id="here-me">
+        <div class="container">
+            <div class="row text-center">
+  					<div class="col-md-9 wow zoomIn animated">
+					    <h1>"I Am Available for Internships"</h1>
+  					</div>
+  					<div class="col-md-3">
+					    <a class="page-scroll btn btn-x3 wow bounceIn animated" href="#contact">Contact Me</a>
+  					</div>
+			</div>
+        </div>
+    </section>
+    <!-- Here Me Section End -->
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInDown animated">
+                    <h2 class="section-heading">Resume</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+
+                    <!-- exprience -->
+                        <li class="timeline-inverted">
+                            <div class="timeline-image wow zoomIn animated">
+                                <span class="ico">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <div class="timeline-panel wow fadeInRight animated">
+                                <div class="timeline-heading">
+                                    <h2 class="subheading">Work Experience</h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Mar 2013
+                                    <br>-
+                                    <br>Present
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInLeft animated">
+                                <div class="timeline-heading">
+                                    <h4>Company Name</h4>
+                                    <h4 class="subheading">Senior UX Designer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Sep 2012
+                                    <br>-
+                                    <br>May 2013
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInRight animated">
+                                <div class="timeline-heading">
+                                    <h4>Company Name</h4>
+                                    <h4 class="subheading">Front-end Developer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Apr 2011
+                                    <br>-
+                                    <br>May 2012
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInLeft animated">
+                                <div class="timeline-heading">
+                                    <h4>Company Name</h4>
+                                    <h4 class="subheading">Junior UX Designer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- exprience End -->
+
+                        <!-- education -->
+                        <li class="timeline-inverted">
+                            <div class="timeline-image wow zoomIn animated">
+                                <span class="ico">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="timeline-panel wow fadeInRight animated">
+                                <div class="timeline-heading">
+                                    <h2 class="subheading">Education</h2>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Jun 2010
+                                    <br>-
+                                    <br>May 2011
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInLeft animated">
+                                <div class="timeline-heading">
+                                    <h4>University Name</h4>
+                                    <h4 class="subheading">Master Degree of Design</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Mar 2009
+                                    <br>-
+                                    <br>Aug 2010
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInRight animated">
+                                <div class="timeline-heading">
+                                    <h4>University Name</h4>
+                                    <h4 class="subheading">Bachelor of Arts</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image wow zoomIn animated">
+                                <h4>Sep 2007
+                                    <br>-
+                                    <br>May 2008
+                                </h4>
+                            </div>
+                            <div class="timeline-panel wow fadeInLeft animated">
+                                <div class="timeline-heading">
+                                    <h4>University Name</h4>
+                                    <h4 class="subheading">Master Degree of Web Design</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- education End -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Resume Section End -->
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInDown">
+                    <h2 class="section-heading">Get In Touch</h2>
+                    <h3 class="section-subheading text-dark">
+                        Below you will details on how to contact me if interested.
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <!-- Contact details -->
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="form-text wow fadeIn animated text-center">
+                                    <h4>Contact details</h4>
+                                    <p>I would be more than grateful to discuss any possible vacations and
+                                        I would be available for an interview at your convenience. Moreover,
+                                        please do not hesitate to contact me via the details
+                                        specified below if further information is needed.
+                                    <p class="wow fadeInUp animated">
+                                        <i class="fa fa-map-marker fa-lg"></i>
+                                        71 Grove Street, Edinburgh, United Kingdom
+                                    </p>
+                                    <p class="wow fadeInUp animated">
+                                        <a href="tel:+447707039734">
+                                            <i class="fa fa-mobile fa-lg"></i>+44 7707 039 734
+                                        </a>
+                                    </p>
+                                    <p class="wow fadeInUp animated">
+                                        <a href="mailto:mihaivisuian@gmail.com">
+                                            <i class="fa fa-envelope-o"></i>mihaivisuian@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Contact details End -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section End -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Mihai Visuian 2016</span>
+                </div>
+                <!-- Social Icons -->
+                <div class="col-md-8">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://github.com/MihaiVisu">
+                                <i class="fa fa-github wow bounceIn animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://uk.linkedin.com/in/mihai-visuian-94b201a3">
+                                <i class="fa fa-linkedin wow bounceIn animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mihaivisuian/">
+                                <i class="fa fa-instagram wow bounceIn animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/103141806045805940195">
+                                <i class="fa fa-google-plus wow bounceIn animated"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Icons End -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big1.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Graphic Design</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 1 End -->
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big2.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Web Design</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 End -->
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big3.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Photography</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3 End -->
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big4.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Graphic Design</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4 End -->
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big5.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Web Development</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5 End -->
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/big6.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>Date: <a href="#">July 2014</a></li>
+                                <li>Client: <a href="#">Lorem Ipsum</a></li>
+                                <li>Category: <a href="#">Graphic Design</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6 End -->
 
     <script type="text/javascript" src="generated/js/project_libs.min.js"></script>
     <script type="text/javascript" src="generated/js/project_gui.min.js"></script>
+
+</body>
+
 </html>

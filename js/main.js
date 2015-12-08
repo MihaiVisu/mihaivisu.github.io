@@ -1,5 +1,3 @@
-var Main = window.Main || {};
-
 $(function() {
-
+    new WOW().init();
 });
