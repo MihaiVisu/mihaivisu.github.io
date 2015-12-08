@@ -80,6 +80,16 @@ module.exports = function (grunt) {
                     'generated/fonts/fontawesome-webfont.woff': 'node_modules/font-awesome/fonts/fontawesome-webfont.woff',
                     'generated/fonts/fontawesome-webfont.woff2': 'node_modules/font-awesome/fonts/fontawesome-webfont.woff2'
                 }
+            },
+            images: {
+                options: {
+                    optimizationLevel: 3
+                },
+                files: {
+                    'generated/img/bg-portfolio.jpg': 'img/bg-portfolio.jpg',
+                    'generated/img/header-bg.jpg': 'img/header-bg.jpg',
+                    'generated/img/skills.png': 'img/skills.png'
+                }
             }
         }
     });
