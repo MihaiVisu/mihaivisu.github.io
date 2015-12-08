@@ -56,7 +56,8 @@ module.exports = function (grunt) {
             libs: {
                 files: {
                     'generated/css/project_libs.min.css': [
-                        'node_modules/bootstrap/less/bootstrap.less'
+                        'node_modules/bootstrap/less/bootstrap.less',
+                        'node_modules/font-awesome/less/font-awesome.less'
                     ]
                 }
             }
@@ -73,6 +74,11 @@ module.exports = function (grunt) {
                     'generated/fonts/glyphicons-halflings-regular.ttf': 'node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf',
                     'generated/fonts/glyphicons-halflings-regular.woff': 'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff',
                     'generated/fonts/glyphicons-halflings-regular.woff2': 'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
+                    'generated/fonts/fontawesome-webfont.eot': 'node_modules/font-awesome/fonts/fontawesome-webfont.eot',
+                    'generated/fonts/fontawesome-webfont.svg': 'node_modules/font-awesome/fonts/fontawesome-webfont.svg',
+                    'generated/fonts/fontawesome-webfont.ttf': 'node_modules/font-awesome/fonts/fontawesome-webfont.ttf',
+                    'generated/fonts/fontawesome-webfont.woff': 'node_modules/font-awesome/fonts/fontawesome-webfont.woff',
+                    'generated/fonts/fontawesome-webfont.woff2': 'node_modules/font-awesome/fonts/fontawesome-webfont.woff2'
                 }
             }
         }
