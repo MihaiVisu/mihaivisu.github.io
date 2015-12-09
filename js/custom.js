@@ -71,13 +71,18 @@ $('.counter').waypoint(function() {
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
 
     $('.total-number-1').animateNumber({
-            number: 2150, //change value here
-            numberStep: comma_separator_number_step
+        number: 2150,
+        numberStep: comma_separator_number_step
+    }, 2000);
+
+    $('.total-number-3').animateNumber({
+        number: 32,
+        numberStep: comma_separator_number_step
     }, 2000);
 
     $('.total-number-2').animateNumber({
-            number: 32, //change value here
-            numberStep: comma_separator_number_step
+        number: 23150,
+        numberStep: comma_separator_number_step
     }, 2000);
 
     }, {
