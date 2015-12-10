@@ -92,6 +92,7 @@ module.exports = function (grunt) {
                     'generated/img/header-bg.jpg': 'img/header-bg.jpg',
                     'generated/img/skills.png': 'img/skills.png',
                     'generated/img/me.jpg': 'img/me.jpg',
+                    'generated/img/portfolio/1.jpg': 'img/portfolio/1.jpg',
                 }
             }
         }
