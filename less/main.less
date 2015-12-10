@@ -25,6 +25,7 @@
     16. Services
 */
 
+@primary-color: #13b0a5;
 
 /* 1. Preloader
 -------------------------------------------------*/
@@ -190,37 +191,26 @@ p.large {
 }
 
 .text-primary {
-    color: #13B0A5;
+    color: @primary-color;
     font-size: 0.9em;
 }
 
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0;
-}
-
 a {
-    color: #13B0A5;
-}
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #fec503;
+    color: @primary-color;
+    outline: 0;
+    &:hover, &:focus, &:active, .active {
+        color: #fec503;
+    }
 }
 
 ::-moz-selection {
     text-shadow: none;
-    background: #13B0A5;
+    background: @primary-color;
 }
 
 ::selection {
     text-shadow: none;
-    background: #13B0A5;
+    background: @primary-color;
 }
 
 img::selection {
@@ -232,7 +222,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #13B0A5;
+    webkit-tap-highlight-color: @primary-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -254,16 +244,16 @@ img {
 }
 
 .bg-clients {
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 .btn-primary {
-    border-color: #13B0A5;
+    border-color: @primary-color;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 .btn:focus,
@@ -304,24 +294,24 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #13B0A5;
-    background-color: #13B0A5;
+    border-color: @primary-color;
+    background-color: @primary-color;
 }
 
 .btn-primary .badge {
-    color: #13B0A5;
+    color: @primary-color;
     background-color: #fff;
 }
 
 .btn-x3 {
     padding: 13px 30px;
-    border: 2px solid #13B0A5;
+    border: 2px solid @primary-color;
     border-radius: 1px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #13B0A5;
+    color: @primary-color;
     background-color: transparent;
 }
 
@@ -330,7 +320,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-x3:active,
 .btn-x3.active,
 .open .dropdown-toggle.btn-x3 {
-    color: #13B0A5;
+    color: @primary-color;
     padding: 13px 35px;
 }
 
@@ -351,21 +341,21 @@ fieldset[disabled] .btn-primary.active {
 .btn-x2:active,
 .btn-x2.active,
 .open .dropdown-toggle.btn-x2 {
-    border-color: #13B0A5;
-    color: #13B0A5;
+    border-color: @primary-color;
+    color: @primary-color;
     background-color: transparent;
 }
 
 .btn-x1 {
     padding: 12px 26px;
-    border-color: #13B0A5;
+    border-color: @primary-color;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 .btn-xl:hover,
@@ -399,12 +389,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #13B0A5;
-    background-color: #13B0A5;
+    border-color: @primary-color;
+    background-color: @primary-color;
 }
 
 .btn-xl .badge {
-    color: #13B0A5;
+    color: @primary-color;
     background-color: #fff;
 }
 
@@ -416,7 +406,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 36px;
-    border-bottom: 6px solid #13b0a5;
+    border-bottom: 6px solid @primary-color;
     padding-bottom: 5px;
     display: inline-block;
 }
@@ -454,7 +444,7 @@ section h3.section-subheading {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #13B0A5;
+    color: @primary-color;
 }
 
 .navbar-default .navbar-collapse {
@@ -462,8 +452,8 @@ section h3.section-subheading {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #13B0A5;
-    background-color: #13B0A5;
+    border-color: @primary-color;
+    background-color: @primary-color;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -472,7 +462,7 @@ section h3.section-subheading {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 .navbar-fixed-top.navbar-shrink .nav li a {
@@ -490,19 +480,19 @@ section h3.section-subheading {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #13B0A5;
+    color: @primary-color;
 }
 
 .navbar-default.navbar-shrink .navbar-nav>.active>a {
     border-radius: 0;
-    color: #13b0a5;
+    color: @primary-color;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 
@@ -554,7 +544,7 @@ header .intro-text .intro-heading {
 }
 
 #status i {
-    color: #13b0a5;
+    color: @primary-color;
 }
 
 
@@ -810,7 +800,7 @@ header .intro-text .intro-heading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #13B0A5;
+    background-color: @primary-color;
 }
 
 .timeline>li .timeline-image h4 {
@@ -861,7 +851,7 @@ header .intro-text .intro-heading {
 
 .timeline .timeline-heading h4.subheading {
     text-transform: none;
-    color: #13b0a5;
+    color: @primary-color;
 }
 
 .timeline .timeline-body>p,
@@ -917,7 +907,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #13B0A5;
+    border-color: @primary-color;
     box-shadow: none;
 }
 
@@ -965,7 +955,7 @@ section#contact .form-text i {
 
 section#contact .form-text h4 {
     color: #fff;
-    border-bottom: 3px solid #13b0a5;
+    border-bottom: 3px solid @primary-color;
     display: inline-block;
     padding-bottom: 10px;
     margin-bottom: 16px;
@@ -1013,7 +1003,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #13B0A5;
+    background-color: @primary-color;
     color: #fff;
 }
 
@@ -1029,6 +1019,9 @@ ul.social-buttons li a:active {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    span {
+        color: @primary-color;
+    }
 }
 
 .portfolio-modal .modal-content h2 {
@@ -1275,7 +1268,7 @@ ul.social-buttons li a:active {
 #services {
     div {
         i {
-            color: #13b0a5;
+            color: @primary-color;
         }
     }
 }
