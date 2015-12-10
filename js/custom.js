@@ -23,9 +23,8 @@ $(document).ready(function(e) {
     $(document).scroll(function(){
     	var top = $('.skills').height()-$(window).scrollTop();
     	console.log(top);
-    	if(top<-1000){
+    	if(top<-720){
     		if(index===0){
-
     			$('.chart').easyPieChart({
     				easing: 'easeOutBounce',
     				onStep: function(from, to, percent) {
@@ -41,7 +40,7 @@ $(document).ready(function(e) {
 });
 
 
-// chart loding
+// chart loading
 $(window).load(function() {
 
 	var chart = window.chart = $('.chart').data('easyPieChart');
