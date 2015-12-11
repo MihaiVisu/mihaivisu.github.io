@@ -316,6 +316,7 @@ fieldset[disabled] .btn-primary.active {
     &:hover, &:focus, &:active {
         color: white;
         background-color: @primary-color;
+        box-shadow: none;
     }
 }
 
@@ -329,44 +330,29 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 400;
     color: #fff;
     background-color: transparent;
-}
-
-.btn-x2:hover,
-.btn-x2:focus,
-.btn-x2:active,
-.btn-x2.active,
-.open .dropdown-toggle.btn-x2 {
-    border-color: @primary-color;
-    color: @primary-color;
-    background-color: transparent;
+    &:hover, &:focus, &:active {
+        border-color: @primary-color;
+        color: @primary-color;
+    }
 }
 
 .btn-x1 {
     padding: 12px 26px;
-    border-color: @primary-color;
-    border-radius: 3px;
+    border: 2px solid @primary-color;
+    border-radius: 1px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
-    background-color: @primary-color;
-}
+    color: @primary-color;
+    background-color: #fff;
 
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;
-}
+    &:hover, &:focus, &:active {
+        color: #fff;
+        background-color: @primary-color;
+        box-shadow: none;
+    }
 
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    background-image: none;
 }
 
 .btn-xl.disabled,
@@ -386,11 +372,6 @@ fieldset[disabled] .btn-xl:active,
 fieldset[disabled] .btn-xl.active {
     border-color: @primary-color;
     background-color: @primary-color;
-}
-
-.btn-xl .badge {
-    color: @primary-color;
-    background-color: #fff;
 }
 
 section {
