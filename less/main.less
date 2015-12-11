@@ -313,15 +313,10 @@ fieldset[disabled] .btn-primary.active {
     font-weight: 400;
     color: @primary-color;
     background-color: transparent;
-}
-
-.btn-x3:hover,
-.btn-x3:focus,
-.btn-x3:active,
-.btn-x3.active,
-.open .dropdown-toggle.btn-x3 {
-    color: @primary-color;
-    padding: 13px 35px;
+    &:hover, &:focus, &:active {
+        color: white;
+        background-color: @primary-color;
+    }
 }
 
 .btn-x2 {
