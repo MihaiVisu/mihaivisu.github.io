@@ -4,7 +4,7 @@ $(function() {
     var $win = $(window);
     $win.scroll(function(){
     	var top = $('.skills').height()-$win.scrollTop();
-    	console.log(top);
+    	// console.log(top);
     	if(top<-720){
     		if(index===0){
     			$('.chart').easyPieChart({

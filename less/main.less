@@ -455,14 +455,16 @@ section h3.section-subheading {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    outline: 0;
     color: @primary-color;
 }
 
-.navbar-default.navbar-shrink .navbar-nav>.active>a {
-    border-radius: 0;
-    color: @primary-color;
+.navbar-default .navbar-nav>.active>a {
     background-color: transparent;
+    border-radius: 0;
+}
+
+.navbar-default.navbar-shrink .navbar-nav>.active>a {
+    color: @primary-color;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -1076,30 +1078,24 @@ ul.social-buttons li a:active {
     }
 
     .navbar-default {
-        padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        color: #fff;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
-
-    .navbar-default.navbar-shrink {
         padding: 10px 0;
-        box-shadow:0 7px 16px 0 rgba(50, 50, 50, 0.1);
-        background-color: #fff;
+        background-color: transparent;
+        -webkit-transition: background-color .2s;
+        -moz-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+
+        .navbar-brand {
+            font-size: 2em;
+            color: #fff;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        }
+
+        &.navbar-shrink {
+            border-bottom: 3px solid @primary-color;
+            background-color: #fff;
+        }
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -1107,26 +1103,28 @@ ul.social-buttons li a:active {
         color: #4d4d50;
     }
 
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
+    header {
+        .intro-text {
+            padding-top: 300px;
+            padding-bottom: 200px;
 
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-    }
+            .intro-lead-in {
+                margin-bottom: 25px;
+                font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 40px;
+                font-style: italic;
+                line-height: 40px;
+            }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
+            .intro-heading {
+                margin-bottom: 50px;
+                text-transform: uppercase;
+                font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 75px;
+            }
+        }
     }
 
     #portfolio .portfolio-item {
