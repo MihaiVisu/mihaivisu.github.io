@@ -19,11 +19,16 @@ $(function() {
     	}
     });
 
+    // activate the stellar plugin for parallax effect on the whole window
+    $.stellar({
+        responsive: true
+    });
+
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1200, 'easeInOutExpo');
         event.preventDefault();
     });
 
