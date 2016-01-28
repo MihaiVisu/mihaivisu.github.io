@@ -13,7 +13,6 @@ $(function() {
     					$(this.el).find('.percent').text(Math.round(percent));
     				}
     			});
-
     		}
     		index++;
     	}
