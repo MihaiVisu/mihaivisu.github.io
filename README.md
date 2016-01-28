@@ -1,5 +1,7 @@
 # Own Landing Page
-This is going to be my own one page "Landing" type of website and an online summary of my CV.
+This stands for my own one page "Landing" type of website and an online summary of my CV.
 
 ---
-Still in development
+I am continuously going to improve the interface and add more content to the page.
+
+<h2>Link: <a href="http://mihaivisu.github.io">Here</a></h2>
