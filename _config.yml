@@ -10,7 +10,7 @@ title: Mihai Visuian
 email: mihaivisuian@gmail.com
 description: "> #description"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://mihaivisu.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username: mihaivisu
 
