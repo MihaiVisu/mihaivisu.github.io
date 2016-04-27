@@ -41,7 +41,7 @@ $('.counter').waypoint(function() {
     }, 2000);
 
     $('.total-number-2').animateNumber({
-        number: 23150,
+        number: 48350,
         numberStep: comma_separator_number_step
     }, 2000);
 
